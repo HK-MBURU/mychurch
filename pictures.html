@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures</title>
+    <link rel="stylesheet" type="text/css" href="pictures.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Images of various events</h1>
+        <form>
+            Upload picture<input id="picture" type="url" name="picture">
+        </form>
+        <button class="add-pictures-btn" id="add-pictures-btn" onclick="addpicture()">Add Pictures</button>
+
+        <div class="flex-box-container" id="flex-add-picture">
+            
+        </div>
+        
+    </div>
+
+    <script>
+        function addpicture(){
+            var image=document.createElement('img');
+            var div=document.getElementById('flex-add-picture');
+            image.src="C:\Users\HK MBURU\Desktop\folders\my websites\IMG_20191020_122322_7.jpg";
+            div.appendChild(image);
+        }
+
+    </script>
+
+
+    
+</body>
+</html>
