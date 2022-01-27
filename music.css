@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    background-color: rgba(181, 238, 148, 0.733);
+    width: 100%;
+    background-image:url(C:\Users\HK MBURU\Pictures\A.K.ISRAEL..jpg);
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    
+}
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    margin: 5px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style:none ;
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar ul li{
+    text-decoration: none;
+    color: #5f5f5f;
+    font-size: 15px;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+.left-col{
+    margin-left: 6%;
+}
+.left-col h1{
+    font-size: 90px;
+    color: rgb(79, 230, 42);
+    line-height: 110px;
+    float: left;
+}
+.right-col{
+    float: right;
+    margin-right: 6%;
+    margin-top: 120px;
+    display: flex;
+    align-items:center ;
+}
+#icon{
+    width: 50px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+#pause{
+    width: 50px;
+    cursor: pointer;
+    border-radius: 25;
+}
+.right-col p{
+    font-size: 18px;
+    color: #5f5f5f;
+    font-weight: 400;
+    margin-right: 15px;
+}
