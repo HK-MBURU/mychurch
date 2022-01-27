@@ -1,0 +1,63 @@
+<html><head>
+     <title> VIDEOS </title>
+     <link rel="stylesheet" href="videos.css">
+    </head>
+     <body>
+         <div class="search-btn search-box">
+             <input type="text" placeholder="Search">
+         </div>
+         <div class="container">
+             <h1>VIDEOS</h1>
+             <div class="row">
+                 <div class="col">
+                     <div class="feature-img">
+                         <img src="C:\Users\user\Desktop\my websites\download (2).jpg">
+                         <img src="C:\Users\user\Desktop\my websites\play-button.png"class="play-btn" onclick="playVideo('C:\Users\HK MBURU\Desktop\folders\my photos\65e0ef26db4e46cbb7e4a9df1327ab39.mp4')" alt="play_button">
+                     </div>
+                 </div>
+                 <div class="col">
+                     <div class="small-img-row">
+                         <div class="small-img">
+                              <img src="C:\Users\user\Desktop\my websites\download.jpg" alt="samwel">
+                              <img src="C:\Users\user\Desktop\my websites\play-button.png"class="play-btn" onclick="playVideo('C:\Users\HK MBURU\Desktop\folders\my photos\VID-20191230-WA0022.mp4')" alt="play_button">
+                          </div>
+                           <p>WHATCH THESE VIDEOS FROM OUR OWN CHURCH</p>
+                     </div>
+                     <div class="small-img-row">
+                         <div class="small-img">
+                             <img src="C:\Users\user\Desktop\my websites\download.jpg" alt="samwel">
+                             <img src="C:\Users\user\Desktop\my websites\play-button.png"class="play-btn"onclick="playVideo('C:\Users\HK MBURU\Desktop\folders\jaj\5750714e42d64529800b3e2d4dbf52d3.mp4')" alt="play_button">
+                         </div>
+                         <p>WHATCH THESE VIDEOS FROM OUR OWN CHURCH</p>
+                     </div>
+                     <div class="small-img-row">
+                          <div class="small-img">
+                              <img src="C:\Users\user\Desktop\my websites\download.jpg" alt="samwel">
+                              <img src="C:\Users\user\Desktop\my websites\play-button.png"class="play-btn"onclick="playVideo('C:\Users\HK MBURU\Desktop\folders\my photos\VID-20191223-WA0001.mp4')" alt="play_button">
+                          </div>
+                          <p>WHATCH THESE VIDEOS FROM OUR OWN CHURCH</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="video-player" id="videoPlayer">
+             <video width="100%" controls autoplay id="myVideo">
+                 <!--<source src="C:\Users\HK MBURU\Downloads\TA NDUTURA -  NG'ANG'A TITO(Official Video).mp4" type="video/mp4">
+                 <source src="C:\Users\HK MBURU\Desktop\folders\jaj\5750714e42d64529800b3e2d4dbf52d3.mp4" type="video/mp4">-->
+                 <source src="C:\Users\user\Desktop\my websites\254757224123_status_e55c402af5e64ff184dafa005d25a476.mp4" type="video/mp4">
+              </video>
+             <img src="C:\Users\user\Desktop\my websites\stop button.jfif" class="close-btn" onclick="stopVideo()" alt="close button">
+         </div>
+         <script>
+             var videoPlayer=document.getElementById("videoPlayer");
+             var myVideo=document.getElementById("videoPlayer");
+              function stopVideo(){
+             videoPlayer.style.display="none";
+             }
+             function playVideo(file){
+             myVideo.src=file;
+             videoPlayer.style.display ="block";
+             }
+         </script>
+     </body>
+</html>
